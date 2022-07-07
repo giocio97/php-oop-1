@@ -3,11 +3,13 @@ class Movie{
     public $titolo;
     public $anno;
     public $regista;
-    public $attori;
+    public $cast;
 
-    public function __construct(string $titolo_pass, int $anno_pass)
+    public function __construct(string $titolo, int $anno, string $regista, string $cast )
     {
-        $this ->titolo = $titolo_pass;
-        $this ->anno = $anno_pass; 
+        $this ->titolo = $titolo;
+        $this ->anno = $anno;
+        $this ->regista = $regista; 
+        $this ->cast = $cast;  
     }
 }
